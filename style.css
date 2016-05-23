@@ -1,0 +1,163 @@
+.logo {
+	height: 10em;
+}
+
+body {
+	font-family: "Lora";
+	font-size: 1.1em;
+	margin: 0;
+	color: hsl(235, 45%, 14%);
+}
+
+a {
+	color: inherit;
+	transition: color 0.2s ease-in-out;
+	-webkit-transition: background 0.2s ease-in-out;
+}
+
+h1 {
+	min-width: 100%;
+	font-weight: 300;
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+h1 span {
+	padding: 0.5em 0.75em;
+	background-color: hsla(356, 79%, 68%, 0.2);
+	background-color: hsl(356, 79%, 41%);
+	color:  #f9f9f9;
+	text-shadow: 0 -1px 2px hsl(356, 79%, 39%);
+	box-shadow: 0 1px 2px #ccc;
+}
+
+h2 {
+	font-weight: 300;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2em 0;
+	background-color: hsla(235, 45%, 14%, 0.05);
+}
+
+main {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding-top: 1em;
+	background-color: hsla(235, 45%, 14%, 0.01);
+}
+
+footer {
+	min-height: 300px;
+	background-color: hsl(235, 45%, 14%);
+	margin-top: 1rem;
+}
+
+article:not(.contact) {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+article li a {
+	text-decoration: none;
+	padding: 0.2em;
+	line-height: 2;
+	border-bottom: 1px solid currentColor;
+}
+
+article a:hover {
+	color: #ad242e;
+}
+
+nav a {
+	text-decoration: none;
+	border-bottom: none;
+	font-weight: 700;
+	padding: 0.5em 0.7em;
+	color: hsl(235, 45%, 34%);
+}
+
+nav a:hover {
+	color: hsl(235, 45%, 14%);
+	background-color: hsla(235, 65%, 29%, 0.1);
+	/* background-color: hsl( 356, 79%, 41%); */
+	color: hsla(235, 45%, 4%, 1);
+}
+
+nav ol {
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+section {
+	box-sizing: border-box;
+	padding: 0.4em;
+}
+
+.who section {
+	max-width: 28.3333333%;
+	min-width: 320px;
+}
+
+.who h2 {
+	margin: 0;
+}
+
+.work section {
+	max-width: 21.25%;
+	min-width: 300px;
+}
+
+.contact {
+	text-align: left;
+}
+
+.contact p {
+	padding: 1.5em 0 1em 2em;
+}
+
+@media screen and (max-width: 1350px) {
+	article:not(.contact) {
+		padding: 0;
+	}
+
+	h1, .contact {
+		text-align: center;
+	}
+
+	.contact p {
+		width: 300px
+		text-align: center;
+		padding: 1em 2em;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	nav a {
+		padding: 0 0.75em;
+	}
+
+	nav a:hover {
+		text-decoration: underline;
+		border-bottom: none;
+	}
+}
