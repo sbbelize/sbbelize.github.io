@@ -1,15 +1,12 @@
-.logo {
-	height: 10em;
-}
-
 body {
 	font-family: "Lora";
-	font-size: 1.1em;
+	font-size: 17.6px;
 	margin: 0;
 	color: hsl(235, 45%, 14%);
 }
 
 a {
+	text-decoration: underline;
 	color: inherit;
 	transition: color 0.2s ease-in-out;
 	-webkit-transition: background 0.2s ease-in-out;
@@ -36,11 +33,6 @@ h2 {
 }
 
 header {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
 	padding: 2em 0;
 	background-color: hsla(235, 45%, 14%, 0.05);
 }
@@ -53,17 +45,19 @@ main {
 }
 
 footer {
-	min-height: 300px;
 	background-color: hsl(235, 45%, 14%);
-	margin-top: 1rem;
+	margin-top: 3.5rem;
+	padding: 10px 15px;
 }
 
-article:not(.contact) {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: flex-start;
+footer {
+	color: #FDFDFD;
+	text-align: center;
+	font-size: 12px	;
+}
+
+.text-nowrap {
+  white-space: nowrap;
 }
 
 ul {
@@ -75,7 +69,7 @@ li {
 }
 
 article li a {
-	text-decoration: none;
+	text-decoration: none !important;
 	padding: 0.2em;
 	line-height: 2;
 	border-bottom: 1px solid currentColor;
@@ -83,6 +77,10 @@ article li a {
 
 article a:hover {
 	color: #ad242e;
+}
+
+nav.navbar {
+	display: inline-block;
 }
 
 nav a {
@@ -96,11 +94,10 @@ nav a {
 nav a:hover {
 	color: hsl(235, 45%, 14%);
 	background-color: hsla(235, 65%, 29%, 0.1);
-	/* background-color: hsl( 356, 79%, 41%); */
 	color: hsla(235, 45%, 4%, 1);
 }
 
-nav ol {
+nav ul {
 	margin: 0;
 }
 
@@ -108,23 +105,8 @@ nav li {
 	display: inline-block;
 }
 
-section {
-	box-sizing: border-box;
-	padding: 0.4em;
-}
-
-.who section {
-	max-width: 28.3333333%;
-	min-width: 320px;
-}
-
 .who h2 {
 	margin: 0;
-}
-
-.work section {
-	max-width: 21.25%;
-	min-width: 300px;
 }
 
 .contact {
@@ -132,10 +114,19 @@ section {
 }
 
 .contact p {
-	padding: 1.5em 0 1em 2em;
+	padding: 1.5em 0 1em 0;
 }
 
-@media screen and (max-width: 1350px) {
+.contact form input[type="submit"] {
+	line-height: 20px;
+	padding: 15px;
+  color: hsla(235, 45%, 4%, 1);
+  background-color: #eee;
+  border: 0;
+  outline: 0;
+}
+
+@media screen and (max-width: 1200px) {
 	article:not(.contact) {
 		padding: 0;
 	}
@@ -151,7 +142,7 @@ section {
 	}
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 767px) {
 	nav a {
 		padding: 0 0.75em;
 	}
@@ -159,5 +150,72 @@ section {
 	nav a:hover {
 		text-decoration: underline;
 		border-bottom: none;
+	}
+}
+
+@media (max-width: 991px) {
+	.logo-wrapper {
+		max-width: 300px;
+		margin: auto;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+
+	nav.navbar {
+		display: block;
+		margin: 0;
+	}
+
+	header {
+		padding-bottom: 10px;
+	}
+
+
+	.navbar-toggle span {
+		background: hsl(235, 45%, 34%)
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.nav-wrapper {
+		align-items: stretch;
+		text-align: center;
+	}
+
+	nav.navbar {
+		text-align: center;
+	}
+
+	.navbar-nav {
+		float: none;
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.flex-row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: stretch;
+	}
+
+	.logo-wrapper {
+		display: inline-block;
+		flex: 0 0 280px;
+	}
+	.logo {
+		max-width: 280px;
+		width: 100%;
+	}
+
+	.nav-wrapper {
+		flex: 1 0 441px;
+		text-align: right;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
 	}
 }

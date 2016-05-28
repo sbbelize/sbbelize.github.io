@@ -1,97 +1,159 @@
 <!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/assets/css/style.css">
 		<script type="text/javascript">
 			WebFontConfig = {
 				google: { families: [ 'Lora::latin' ] }
 			};
 			(function() {
 				var wf = document.createElement('script');
-				wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+				wf.src = '//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
 				wf.type = 'text/javascript';
 				wf.async = 'true';
 				var s = document.getElementsByTagName('script')[0];
 				s.parentNode.insertBefore(wf, s);
 			})(); </script>
+
+			<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+			<script src="/assets/js/bootstrap.min.js"></script>
+
+			<title>Southern Baptist of Belize</title>
 	</head>
 
 	<body>
 		<header>
-			<a href="#" class="parallelogram"><img src="images/sbb-logo.svg" alt="Southern Baptist of Belize" class="logo"></a>
-			<nav>
-				<ol>
-					<li><a href="#whoweare">Who We Are</a></li>
-					<li><a href="#whatwedo">What We Do</a></li>
-					<li><a href="#upcomingevents">Upcoming Events</a></li>
-					<li><a href="#contactus">Contact Us</a></li>
-				</ol>
-			</nav>
+			<div class="container">
+				<div class="flex-row">
+					<div class="logo-wrapper col-md-4 col-sm-3">
+						<a href="#"><img src="/assets/img/sbb-logo.svg" alt="Southern Baptist of Belize" class="logo"></a>
+					</div>
+					<div class="nav-wrapper col-md-8 col-sm-9">
+						<nav class="navbar" role="navigation">
+							<div class="navbar-header visible-xs">
+			          <button type="button" class="navbar-toggle btn btn-default" data-toggle="collapse" data-target=".navbar-collapse">
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			          </button>
+			          <a class="navbar-brand" href="#!">Menu</a>
+			        </div>
+			        <div class="navbar-collapse collapse">
+								<ul class="nav navbar-nav">
+									<li><a href="#whoweare">Who We Are</a></li>
+									<li><a href="#whatwedo">What We Do</a></li>
+									<li><a href="#upcomingevents">Upcoming Events</a></li>
+									<li><a href="#contactus">Contact Us</a></li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
 		</header>
 
 		<main>
-			<article id="whoweare" class="who">
-				<h1><span>Who We Are</span></h1>
-				<section>
-					<p>
-						Southern Baptist of Belize is the union of three organizations with a common mission; to equip the Church to make disciples. 
-					</p>
-					<p>
-						We each adhere to <a href="#">The&nbsp;Baptist&nbsp;Faith&nbsp;and&nbsp;Message&nbsp;2000</a> as our confession of faith.
-					</p>
-				</section>
+			<div class="container">
+				<article id="whoweare" class="who">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1><span>Who We Are</span></h1>
+						</div>
+						<div class="col-sm-4">
+							<p>
+								Southern Baptist of Belize is the union of three organizations with a common mission; to equip the Church to make disciples. 
+							</p>
+							<p>
+								We each adhere to <a class="text-nowrap" href="#">The Baptist Faith and Message 2000</a> as our confession of faith.
+							</p>
+						</div>
+						<div class="col-sm-4">
+							<p>The vision behind Southern Baptist of Belize is for a network of churches to grow and extend the Kingdom of God across Belize and the world.</p>
+						</div>
 
-				<section>
-					<p>The vision behind Southern Baptist of Belize is for a network of churches to grow and extend the Kingdom of God across Belize and the world.</p>
-				</section>
+						<div class="col-sm-4">
+							<h2>Learn more about us...</h2>
+							<ul>
+								<li><a href="http://gtbn.us/">Golden Triangle Baptist Network</a></li>
+								<li><a href="http://kidzkonnect4jesus.org/">Kidz Konnect 4 Jesus</a></li>
+								<li><a href="http://visionministriesofamerica.com/">Vision Ministries of America</a></li>
+							</ul>
+						</div>
+					</div>
+				</article>
 
-				<section>
-					<h2>Learn more about us...</h1>
-					<ul>
-						<li><a href="http://gtbn.us/">Golden Triangle Baptist Network</a></li>
-						<li><a href="http://kidzkonnect4jesus.org/">Kidz Konnect 4 Jesus</a></li>
-						<li><a href="http://visionministriesofamerica.com/">Vision Ministries of America</a></li>
-					</ul>
-				</section>
-			</article>
+				<article id="whatwedo" class="work">
+					<h1><span>What We Do</span></h1>
 
-			<article id="whatwedo" class="work">
-				<h1><span>What We Do</span></h1>
+					<div class="row">
+						<div class="col-sm-3">
+							<h2>Church Planting</h2>
+							<p>We believe in starting all kinds of churches in all kinds of places for all kinds of people.</p>
+						</div>
 
-				<section>
-					<h2>Church Planting</h2>
-					<p>We believe in starting all kinds of churches in all kinds of places for all kinds of people.</p>
-				</section>
+						<div class="col-sm-3">
+							<h2>Leadership Development</h2>
+							<p>We work to enhance the quality of leadership in individuals, churches, and organizations [Need additional content?]</p>
+						</div>
 
-				<section>
-					<h2>Leadership Development</h2>
-					<p>We work to enhance the quality of leadership in individuals, churches, and organizations XXX</p>
-				</section>
+						<div class="col-sm-3">
+							<h2>Church Revitalization and Awakening</h2>
+							<p>We strive to capture the vision God has for churches to impact their communities and make disciples.</p>
+						</div>
 
-				<section>
-					<h2>Church Revitalization and Awakening</h2>
-					<p>We strive to capture the vision God has for churches to impact their communities and make disciples.</p>
-				</section>
+						<div class="col-sm-3">
+							<h2>Christian Community Development</h2>
+							<p>[Need additional content?]</p>
+						</div>
+					</div>
+				</article>
+				
+				<article id="upcomingevents" class="calendar hidden">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1><span>Upcoming Events</span></h1>
+						</div>
+					</div>
+				</article>
 
-				<section>
-					<h2>Christian Community Development</h2>
-					<p>XXX</p>
-				</section>
-			</article>
-			
-			<article id="upcomingevents" class="calendar">
-				<h1><span>Upcoming Events</span></h1>
-			</article>
+				<article id="contactus" class="contact">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1><span>Contact Us</span></h1>
+							<p>
+								<span>Contact us by using the form below</span>
+							</p>
 
-			<article id="contactus" class="contact">
-				<h1><span>Contact Us</span></h1>
-				<p>
-					<span>Please feel free to get in touch by emailing us at:</span>
-				</p>
-			</article>
+							<form action="https://formspree.io/dustinguidry@yahoo.com" method="POST">
+								<input type="hidden" id="_subject" name="New Message from SBB Website">
+								<div class="form-group">
+									<label for="name">Name:</label>
+									<input class="form-control" placeholder="Name" type="text" id="name" name="name">
+								</div>
+								<div class="form-group">
+									<label for="email">Email Address:</label>
+									<input class="form-control" placeholder="Email" type="email" id="email" name="email">
+								</div>
+								<div class="form-group">
+									<label for="message">Message:</label>
+									<textarea class="form-control" id="message" name="message"></textarea>
+								</div>
+								<input type="text" name="_gotcha" style="display:none" />
+								<input type="submit" value="Send" class="btn btn-default">
+							</form>
+						</div>
+					</div>
+				</article>
+			</div>
 		</main>
 
 		<footer>
+			<div class="row">
+				<p>&copy; 2016 Southern Baptist of Belize</p>
+			</div>
 		</footer>
 	</body>
 </html>
