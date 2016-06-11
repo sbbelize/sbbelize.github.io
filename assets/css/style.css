@@ -3,6 +3,7 @@ body {
 	font-size: 17.6px;
 	margin: 0;
 	color: hsl(235, 45%, 14%);
+	position: relative;
 }
 
 a {
@@ -230,4 +231,15 @@ main > .container {
 
 main > .container > article > .row {
     padding: 0 30px 30px;
+}
+
+nav.left-navbar.affix {
+    top: 20px;
+    width: 270px;
+}
+
+
+nav.left-navbar ul li {
+    display:block;
+    float: none;
 }
