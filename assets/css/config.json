@@ -393,7 +393,9 @@
   ],
   "js": [
     "modal.js",
-    "collapse.js"
+    "affix.js",
+    "collapse.js",
+    "scrollspy.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=6e33126bdf055918e0f1e0e3c06ea06a"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=f00cac5ed4147ab065ca3492bfe596ea"
 }
